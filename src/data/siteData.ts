@@ -1,148 +1,135 @@
 /**
  * ─────────────────────────────────────────────────────────────────────────────
- * SITE DATA — the single file every template user edits
- * ─────────────────────────────────────────────────────────────────────────────
- * Business name, contact info, services, reviews, team, hours, and navigation
- * all live here. Components and pages import from this file so you never need
- * to hunt through markup to update your business details.
- *
- * IMPORTANT: also update the `site` field in astro.config.mjs to match your
- * production domain.
+ * SITE DATA — Automóviles Trafalgar
  * ─────────────────────────────────────────────────────────────────────────────
  */
 
 export const siteData = {
   // ── Business identity ────────────────────────────────────────────────────
-  name: 'Small Business Starter',
-  tagline: 'Professional service you can trust.',
+  name: 'Automóviles Trafalgar',
+  tagline: 'Tu concesionario multimarca y taller de confianza.',
   description:
-    'A fast, mobile-first small-business website template built with Astro 7 and Tailwind v4. Fully customisable for any trade or service business.',
-  url: 'https://example.com',
-  locale: 'en_US',
+    'Especialistas en la compra-venta de vehículos de ocasión, todoterrenos y servicio de taller mecánico integral. Calidad, garantía y financiación a tu medida.',
+  url: 'https://automovilestrafalgar.es',
+  locale: 'es_ES',
 
-  /** Business / contractor license number. Displayed in the header and footer
-   *  as a trust signal. Set to an empty string to hide it. */
-  license: 'Lic# 123456',
+  /** Número de licencia o registro mercantil (déjalo vacío si no aplica) */
+  license: '',
 
   // ── Contact ──────────────────────────────────────────────────────────────
-  email: 'hello@example.com',
-  phoneForTel: '555-867-5309',
-  phoneFormatted: '(555) 867-5309',
+  email: 'info@automovilestrafalgar.es',
+  phoneForTel: '+34900000000', // Actualizar con tu teléfono real
+  phoneFormatted: '+34 900 000 000',
   address: {
-    lineOne: '123 Main Street',
-    lineTwo: 'Suite 100',
-    city: 'Denver',
-    state: 'CO',
-    zip: '80206',
-    country: 'US',
-    mapLink: 'https://maps.app.goo.gl/example',
+    lineOne: 'Calle de Trafalgar, 1', // Actualizar con tu dirección real
+    lineTwo: '',
+    city: 'Madrid',
+    state: 'Madrid',
+    zip: '28010',
+    country: 'ES',
+    mapLink: 'https://maps.app.goo.gl/example', // Actualizar con enlace a Google Maps
   },
   hours: [
-    { days: 'Monday - Friday', time: '7:00 AM - 6:00 PM' },
-    { days: 'Saturday', time: '8:00 AM - 2:00 PM' },
-    { days: 'Sunday', time: 'Closed' },
+    { days: 'Lunes - Viernes', time: '10:00 - 14:00 | 16:30 - 20:00' },
+    { days: 'Sábados', time: '10:00 - 14:00' },
+    { days: 'Domingos', time: 'Cerrado' },
   ],
-  emergencyService: '24/7 Emergency Service Available',
+  emergencyService: 'Servicio de grúa y taller 24/7 disponible',
 
-  // ── Social media (set to empty string to hide a link) ────────────────────
+  // ── Social media ─────────────────────────────────────────────────────────
   socials: {
     facebook: 'https://www.facebook.com/',
     instagram: 'https://www.instagram.com/',
     google: 'https://www.google.com/maps',
   },
 
-  // ── Navigation (add, remove, or reorder as needed) ───────────────────────
+  // ── Navigation ───────────────────────────────────────────────────────────
   nav: [
-    { label: 'Home', href: '/' },
-    { label: 'About', href: '/about' },
-    { label: 'Services', href: '/services' },
-    { label: 'Reviews', href: '/reviews' },
-    { label: 'Blog', href: '/blog' },
-    { label: 'Contact', href: '/contact' },
+    { label: 'Inicio', href: '/' },
+    { label: 'Vehículos', href: '/vehiculos' },
+    { label: 'Servicios', href: '/servicios' },
+    { label: 'Nosotros', href: '/nosotros' },
+    { label: 'Contacto', href: '/contacto' },
   ],
 
   // ── Services ─────────────────────────────────────────────────────────────
   services: [
     {
-      title: 'General Repairs',
+      title: 'Compra y Venta de Vehículos',
       description:
-        'From leaky faucets to broken drywall, our team handles everyday repairs quickly and professionally. We diagnose the issue, explain your options, and get it fixed — no surprises on the bill.',
+        'Amplio stock de coches de ocasión, seminuevos y km 0. Todos nuestros vehículos se entregan totalmente revisados y con garantía.',
     },
     {
-      title: 'Installations',
+      title: 'Especialistas en 4x4',
       description:
-        'New fixtures, appliances, water heaters, ceiling fans, and more. We ensure every installation is up to code, properly tested, and backed by our workmanship guarantee.',
+        'Contamos con una amplia experiencia en la venta y preparación de vehículos todoterreno y SUVs para que disfrutes de cualquier aventura.',
     },
     {
-      title: 'Inspections',
+      title: 'Taller Mecánico',
       description:
-        'Comprehensive property inspections for homebuyers, sellers, and proactive homeowners. We identify potential issues before they become expensive emergencies.',
+        'Servicio de mantenimiento integral: revisiones pre-ITV, cambios de aceite, frenos, neumáticos y diagnosis avanzada para todas las marcas.',
     },
     {
-      title: 'Remodeling',
+      title: 'Financiación a Medida',
       description:
-        'Kitchen and bathroom remodels, basement finishing, and whole-home renovations. We manage the project from design through final walkthrough so you can enjoy the transformation.',
+        'Colaboramos con las mejores financieras para ofrecerte el plan que mejor se adapte a tu bolsillo. Financiación de hasta el 100% sin entrada.',
     },
     {
-      title: 'Emergency Service',
+      title: 'Tasación de Vehículos',
       description:
-        "Burst pipes, electrical outages, and other urgent problems don't wait — and neither do we. Our emergency line is staffed 24/7 for rapid response when you need it most.",
+        'Compramos tu coche antiguo. Realizamos una tasación justa y transparente basada en los precios de mercado actuales y el estado del vehículo.',
     },
     {
-      title: 'Maintenance Plans',
+      title: 'Gestoría Integral',
       description:
-        'Regular preventive maintenance keeps your systems running efficiently and extends their lifespan. Ask about our seasonal service packages for year-round peace of mind.',
+        'Nos ocupamos de todo el papeleo: transferencias, matriculaciones y bajas, para que tú solo te preocupes de disfrutar de tu nuevo coche.',
     },
   ],
 
   // ── Reviews ──────────────────────────────────────────────────────────────
   reviews: [
-    { quote: "They showed up on time, explained everything clearly, and finished the job faster than expected. Best service experience we've had.", name: 'Sarah M.', location: 'Denver, CO', rating: 5 },
-    { quote: "Honest pricing and top-notch work. I've used them for three different projects now and they never disappoint.", name: 'James R.', location: 'Aurora, CO', rating: 5 },
-    { quote: 'Our emergency call was answered in minutes. They had the problem fixed before dinner. Truly dependable.', name: 'Linda K.', location: 'Lakewood, CO', rating: 5 },
-    { quote: 'The remodel turned out even better than we imagined. Professional, clean, and on budget. We couldn\'t be happier.', name: 'Tom & Beth P.', location: 'Boulder, CO', rating: 5 },
-    { quote: 'Great communication from start to finish. They sent photos of the progress and cleaned up perfectly when done.', name: 'Anita W.', location: 'Littleton, CO', rating: 5 },
-    { quote: "I appreciate the upfront pricing — no hidden fees or surprise charges. That's rare these days. Highly recommend.", name: 'Marcus D.', location: 'Arvada, CO', rating: 5 },
+    { quote: "Compré mi todoterreno aquí y la experiencia fue inmejorable. El coche estaba como nuevo y el trato fue súper cercano.", name: 'Carlos M.', location: 'Madrid', rating: 5 },
+    { quote: "Llevo mi coche a su taller desde hace años. Son honestos con los precios y muy rápidos. 100% recomendables.", name: 'Javier R.', location: 'Madrid', rating: 5 },
+    { quote: 'Me tasaron el coche viejo muy por encima de lo que me ofrecían en otros concesionarios. Muy transparentes.', name: 'Laura K.', location: 'Getafe', rating: 5 },
+    { quote: 'Me ayudaron a conseguir la financiación en menos de 24 horas. Salí conduciendo el mismo día.', name: 'Tomás y Elena P.', location: 'Leganés', rating: 5 },
   ],
 
   // ── About page ───────────────────────────────────────────────────────────
   about: {
     story: [
-      'What started as a one-person operation has grown into a trusted local team. For over 15 years, we\'ve served homeowners and businesses with reliable, high-quality work — and we plan to keep doing just that for decades to come.',
-      'Every member of our crew is licensed, insured, and background-checked. We treat your property with the same care we\'d give our own, and we stand behind every job with a satisfaction guarantee.',
+      'Automóviles Trafalgar nació con la pasión por el mundo del motor y un claro objetivo: ofrecer vehículos de confianza y un servicio técnico impecable. Llevamos años siendo el referente para conductores y amantes de los 4x4 en nuestra ciudad.',
+      'Nuestro equipo está formado por asesores comerciales y mecánicos altamente cualificados. No solo vendemos coches, construimos relaciones de confianza con nuestros clientes a través de la transparencia y la garantía de nuestro trabajo.',
     ],
     team: [
-      { name: 'John Smith', role: 'Founder & Lead Technician', image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80' },
-      { name: 'Maria Garcia', role: 'Operations Manager', image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&q=80' },
-      { name: 'David Chen', role: 'Senior Technician', image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80' },
+      { name: 'Director', role: 'Gerente y Ventas', image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80' },
+      { name: 'Mecánico Jefe', role: 'Jefe de Taller', image: 'https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=400&q=80' },
     ],
   },
 
-  // ── Trust bar items (homepage strip) ─────────────────────────────────────
+  // ── Trust bar items ──────────────────────────────────────────────────────
   trustItems: [
-    { label: 'Licensed' },
-    { label: 'Fully Insured' },
-    { label: 'Years Experience', value: '15+' },
-    { label: 'Jobs Completed', value: '2,500+' },
+    { label: 'Vehículos Revisados' },
+    { label: 'Garantía 12 Meses' },
+    { label: 'Financiación 100%' },
+    { label: 'Clientes Satisfechos', value: '1,000+' },
   ],
 
   // ── Footer nav columns ──────────────────────────────────────────────────
   footerNav: [
     {
-      title: 'Company',
+      title: 'Concesionario',
       links: [
-        { label: 'About', href: '/about' },
-        { label: 'Services', href: '/services' },
-        { label: 'Reviews', href: '/reviews' },
-        { label: 'Blog', href: '/blog' },
+        { label: 'Nuestro Stock', href: '/vehiculos' },
+        { label: 'Taller', href: '/servicios' },
+        { label: 'Nosotros', href: '/nosotros' },
       ],
     },
     {
-      title: 'Support',
+      title: 'Atención al Cliente',
       links: [
-        { label: 'Contact', href: '/contact' },
-        { label: 'Privacy', href: '/privacy' },
-        { label: 'Terms', href: '/terms' },
+        { label: 'Contacto', href: '/contacto' },
+        { label: 'Aviso Legal', href: '/aviso-legal' },
+        { label: 'Política de Privacidad', href: '/privacidad' },
       ],
     },
   ],
