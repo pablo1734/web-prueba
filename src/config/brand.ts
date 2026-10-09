@@ -14,12 +14,12 @@
 
 export const brand = {
   // ── Site Identity ──────────────────────────────────────────────────────────
-  name: 'Small Business Starter',
-  tagline: 'Professional service you can trust.',
+  name: 'Automóviles Trafalgar',
+  tagline: 'Tu concesionario multimarca de confianza.',
   description:
-    'A fast, mobile-first small-business website template built with Astro 7 and Tailwind v4. Fully customisable for any trade or service business.',
-  url: 'https://example.com',
-  locale: 'en_US',
+    'Concesionario y taller especializado en vehículos de ocasión, todoterreno y servicio mecánico integral.',
+  url: 'https://automovilestrafalgar.es',
+  locale: 'es_ES',
 
   // ── Fonts ──────────────────────────────────────────────────────────────────
   // To swap fonts: change the `name` values here AND update astro.config.mjs

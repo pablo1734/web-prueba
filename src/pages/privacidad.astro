@@ -1,0 +1,25 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Banner from '../components/Banner.astro';
+---
+
+<BaseLayout title="Política de privacidad" description="Política de privacidad de Automóviles Trafalgar.">
+  <Header slot="header" />
+
+  <Banner title="Política de privacidad" />
+
+  <section class="py-section">
+    <div class="mx-auto max-w-3xl px-4 sm:px-6">
+      <div class="space-y-6 text-text-muted leading-relaxed">
+        <p>En Automóviles Trafalgar, tratamos tus datos con la máxima confidencialidad y solo con fines de atención al cliente, gestión de ventas y cumplimiento legal.</p>
+        <p>Utilizamos la información que nos facilitas para responder consultas, gestionar presupuestos, atender solicitudes de compra o venta de vehículos y ofrecer un servicio personalizado.</p>
+        <p>No compartiremos tus datos con terceros salvo obligación legal o cuando sea necesario para la prestación de servicios relacionados con la operación.</p>
+        <p>Podrás solicitar acceso, rectificación o eliminación de tus datos en cualquier momento poniéndote en contacto con nosotros.</p>
+      </div>
+    </div>
+  </section>
+
+  <Footer slot="footer" />
+</BaseLayout>

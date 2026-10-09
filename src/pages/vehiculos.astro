@@ -1,0 +1,57 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Banner from '../components/Banner.astro';
+import CTA from '../components/CTA.astro';
+import { siteData } from '../data/siteData';
+
+const stock = [
+  {
+    title: 'Coches de ocasión',
+    description: 'Vehículos revisados, certificados y listos para circular con total tranquilidad.',
+  },
+  {
+    title: 'SUV y todoterreno',
+    description: 'Modelos robustos, modernos y perfectos para carretera, mudanzas o aventuras.',
+  },
+  {
+    title: 'Seminuevos premium',
+    description: 'Coches casi nuevos con garantía y un control de calidad exhaustivo.',
+  },
+  {
+    title: 'Financiación especializada',
+    description: 'Te ayudamos a encontrar la mejor opción de pago para tu presupuesto y perfil.',
+  },
+];
+---
+
+<BaseLayout title="Vehículos" description={`Consulta el stock de ${siteData.name}: coches de ocasión, SUVs y vehículos revisados.`}>
+  <Header slot="header" />
+
+  <Banner title="Vehículos" />
+
+  <section class="py-section">
+    <div class="mx-auto max-w-site px-4 sm:px-6">
+      <div class="mx-auto mb-10 max-w-2xl text-center lg:mb-14">
+        <h2 class="font-heading text-h2 font-bold uppercase text-text">Vehículos revisados y de confianza</h2>
+        <p class="mt-3 text-text-muted leading-relaxed">
+          Seleccionamos cada unidad con rigor para que puedas comprar con seguridad y sin sorpresas.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
+        {stock.map((item) => (
+          <article class="rounded-lg border border-border bg-background p-6 shadow-sm">
+            <h3 class="font-heading text-h3 font-semibold text-text">{item.title}</h3>
+            <p class="mt-2 text-text-muted leading-relaxed">{item.description}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <CTA />
+
+  <Footer slot="footer" />
+</BaseLayout>

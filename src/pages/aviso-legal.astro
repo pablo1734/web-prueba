@@ -1,0 +1,25 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Banner from '../components/Banner.astro';
+---
+
+<BaseLayout title="Aviso legal" description="Aviso legal de Automóviles Trafalgar.">
+  <Header slot="header" />
+
+  <Banner title="Aviso legal" />
+
+  <section class="py-section">
+    <div class="mx-auto max-w-3xl px-4 sm:px-6">
+      <div class="space-y-6 text-text-muted leading-relaxed">
+        <p>Automóviles Trafalgar ofrece este sitio web con información general sobre sus servicios, vehículos y atención al cliente.</p>
+        <p>La información publicada puede modificarse en cualquier momento sin previo aviso, y la empresa no se responsabiliza por posibles errores, omisiones o cambios no comunicados.</p>
+        <p>El uso de este sitio implica la aceptación de las condiciones generales y la responsabilidad del usuario en la verificación de la información relevante antes de contratar cualquier servicio.</p>
+        <p>Para consultas legales o de contratación, puedes contactar directamente con nuestro equipo.</p>
+      </div>
+    </div>
+  </section>
+
+  <Footer slot="footer" />
+</BaseLayout>

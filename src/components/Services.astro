@@ -15,10 +15,10 @@ interface Props {
 }
 
 const {
-  topper = 'What We Do',
-  heading = 'Our Services',
-  description = 'From routine maintenance to complex projects, we deliver quality workmanship with honest pricing.',
-  services = siteData.services.map((s) => ({ ...s, href: '/services' })),
+  topper = 'Qué hacemos',
+  heading = 'Nuestros servicios',
+  description = 'Desde la compra y venta hasta el taller mecánico, te acompañamos en cada etapa con honestidad y calidad.',
+  services = siteData.services.map((s) => ({ ...s, href: '/servicios' })),
 } = Astro.props;
 ---
 
@@ -40,7 +40,7 @@ const {
             <h3 class="font-heading text-h3 font-semibold text-text">{service.title}</h3>
             <p class="mt-2 flex-1 text-sm leading-relaxed text-text-muted">{service.description}</p>
             <span class="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-primary transition-colors group-hover:text-accent" aria-hidden="true">
-              Learn more <span class="transition-transform group-hover:translate-x-0.5">&rarr;</span>
+              Saber más <span class="transition-transform group-hover:translate-x-0.5">&rarr;</span>
             </span>
           </a>
         </li>

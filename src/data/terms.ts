@@ -10,72 +10,72 @@
  */
 
 export const termsOfService = {
-  effectiveDate: 'September 1, 2026',
+  effectiveDate: '1 de septiembre de 2026',
 
   sections: [
     {
-      heading: 'Acceptance of Terms',
+      heading: 'Aceptación de los términos',
       content: [
-        'By accessing or using our website and services, you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our website or services.',
+        'Al acceder y utilizar nuestra web y servicios, aceptas quedar sujeto a estos términos y condiciones. Si no estás de acuerdo, por favor no utilices la web ni nuestros servicios.',
       ],
     },
     {
-      heading: 'Services',
+      heading: 'Servicios',
       content: [
-        'We provide general contracting, repair, installation, inspection, remodeling, and maintenance services as described on our website. All services are subject to availability and may vary by location.',
-        'Specific terms for individual projects — including scope of work, timelines, and pricing — will be outlined in a separate written estimate or contract provided before work begins.',
+        'Ofrecemos servicios de compraventa, financiación, asesoramiento, mantenimiento y reparación de vehículos según se describe en nuestra web. Todos los servicios están sujetos a disponibilidad y pueden variar según la ubicación y la situación del vehículo.',
+        'Los términos específicos de cada proyecto, incluyendo alcance, plazos y presupuesto, se concretarán en un presupuesto o contrato previo antes de comenzar el trabajo.',
       ],
     },
     {
-      heading: 'Estimates & Pricing',
+      heading: 'Presupuestos y precios',
       content: [
-        'Estimates are provided based on the information available at the time of assessment. Actual costs may vary if unforeseen conditions are discovered during the course of work. We will communicate any changes to scope or pricing before proceeding.',
-        'Payment terms, accepted methods, and any deposit requirements will be specified in your individual service agreement.',
+        'Los presupuestos se elaboran en base a la información disponible en el momento de la valoración. Los costes finales pueden variar si se detectan condiciones no previstas durante la revisión o el trabajo.',
+        'Los plazos de pago, métodos aceptados y posibles pagos iniciales se indicarán en el documento específico de cada servicio.',
       ],
     },
     {
-      heading: 'Scheduling & Cancellations',
+      heading: 'Citas y cancelaciones',
       content: [
-        'We make every effort to arrive within the scheduled time window. However, service times may occasionally shift due to weather, prior job complexity, or emergency calls.',
-        'If you need to reschedule or cancel an appointment, please contact us at least 24 hours in advance. Cancellation fees may apply for missed appointments without adequate notice.',
+        'Haremos todo lo posible por cumplir los horarios previstos. No obstante, los tiempos pueden variar por motivos de trabajo previo, requerimientos del vehículo o incidencias externas.',
+        'Si necesitas reprogramar o cancelar una cita, avísanos con la mayor antelación posible. En ciertos casos pueden aplicarse condiciones de cancelación.',
       ],
     },
     {
-      heading: 'Warranties & Guarantees',
+      heading: 'Garantías y devoluciones',
       content: [
-        'We stand behind our workmanship and offer a satisfaction guarantee on all services performed. Specific warranty terms will be detailed in your service agreement.',
-        'Warranties do not cover damage caused by misuse, neglect, acts of nature, or modifications made by others after our work is completed.',
+        'Respaldamos la calidad de nuestro trabajo y ofrecemos garantía en los servicios prestados según lo indicado en cada caso.',
+        'Las garantías no cubren daños causados por uso indebido, negligencia, accidente o modificaciones realizadas por terceros después del servicio.',
       ],
     },
     {
-      heading: 'Limitation of Liability',
+      heading: 'Limitación de responsabilidad',
       content: [
-        'To the fullest extent permitted by law, our total liability for any claim arising from our services shall not exceed the amount you paid for the specific service giving rise to the claim.',
-        'We are not liable for indirect, incidental, or consequential damages, including lost profits or data, even if we have been advised of the possibility of such damages.',
+        'En la medida permitida por la ley, la responsabilidad total por cualquier reclamación derivada de nuestros servicios no superará el importe abonado por el servicio concreto que la originó.',
+        'No asumimos responsabilidad por daños indirectos, incidentales o consecuentes, incluidos posibles perjuicios derivados de la operación.',
       ],
     },
     {
-      heading: 'Intellectual Property',
+      heading: 'Propiedad intelectual',
       content: [
-        'All content on this website — including text, images, logos, and design — is our property or used with permission and is protected by applicable intellectual property laws. You may not reproduce, distribute, or create derivative works from this content without our written consent.',
+        'Todo el contenido de esta web, incluyendo textos, imágenes, logotipos y diseño, es propiedad de Automóviles Trafalgar o se utiliza con autorización y está protegido por la legislación aplicable.',
       ],
     },
     {
-      heading: 'Governing Law',
+      heading: 'Ley aplicable',
       content: [
-        'These Terms of Service are governed by and construed in accordance with the laws of the state in which our business is registered, without regard to conflict of law principles.',
+        'Estos términos se rigen por la legislación vigente en España y cualquier conflicto se resolverá ante los tribunales competentes de Madrid, salvo que la normativa aplicable disponga otra cosa.',
       ],
     },
     {
-      heading: 'Changes to These Terms',
+      heading: 'Cambios en estos términos',
       content: [
-        'We reserve the right to update these Terms of Service at any time. Changes will be posted on this page with a revised effective date. Your continued use of our website or services after changes are posted constitutes acceptance of the updated terms.',
+        'Nos reservamos el derecho a actualizar estos términos y condiciones. Cualquier cambio se publicará en esta página con su fecha de revisión, y el uso continuado de la web tras la actualización implicará su aceptación.',
       ],
     },
     {
-      heading: 'Contact Us',
+      heading: 'Contacto',
       content: [
-        'If you have questions about these Terms of Service, please contact us using the information on our Contact page.',
+        'Si tienes dudas sobre estos términos y condiciones, puedes contactarnos a través de la información disponible en nuestra página de contacto.',
       ],
     },
   ],

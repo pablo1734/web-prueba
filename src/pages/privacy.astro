@@ -8,10 +8,10 @@ import { brand } from '../config/brand';
 import { privacyPolicy } from '../data/privacy';
 ---
 
-<BaseLayout title="Privacy Policy" description={`Privacy Policy for ${brand.name}. Learn how we collect, use, and protect your information.`}>
+<BaseLayout title="Política de privacidad" description={`Política de privacidad de ${brand.name}. Descubre cómo tratamos tus datos.`}>
   <Header slot="header" />
 
-  <Banner title="Privacy Policy" />
+  <Banner title="Política de privacidad" />
 
   <LegalPage effectiveDate={privacyPolicy.effectiveDate} sections={privacyPolicy.sections} />
 

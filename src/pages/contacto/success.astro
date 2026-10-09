@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Banner from '../../components/Banner.astro';
+---
+
+<BaseLayout title="Mensaje enviado" description="Gracias por contactar con Automóviles Trafalgar.">
+  <Header slot="header" />
+
+  <Banner title="Mensaje enviado" />
+
+  <section class="py-section">
+    <div class="mx-auto max-w-2xl px-4 text-center sm:px-6">
+      <h2 class="font-heading text-h2 font-bold uppercase text-text">Gracias por escribirnos</h2>
+      <p class="mt-4 text-text-muted leading-relaxed">
+        Hemos recibido tu consulta y te responderemos lo antes posible.
+      </p>
+      <a href="/" class="mt-8 inline-flex min-h-11 items-center justify-center rounded-md bg-accent px-8 py-3 text-base font-bold text-accent-fg shadow-sm transition-opacity hover:opacity-90">
+        Volver al inicio
+      </a>
+    </div>
+  </section>
+
+  <Footer slot="footer" />
+</BaseLayout>

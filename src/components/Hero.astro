@@ -20,15 +20,15 @@ interface Props {
 }
 
 const {
-  topper = 'Licensed & Insured',
+  topper = 'Garantía y confianza',
   heading = brand.tagline,
   description = brand.description,
-  ctaLabel = 'Get a Free Quote',
-  ctaHref = '/contact',
-  secondaryLabel = 'Our Services',
-  secondaryHref = '/services',
+  ctaLabel = 'Solicitar presupuesto',
+  ctaHref = '/contacto',
+  secondaryLabel = 'Nuestros servicios',
+  secondaryHref = '/servicios',
   imageSrc = localHeroImage ?? PLACEHOLDER,
-  imageAlt = 'Professional tradesperson at work',
+  imageAlt = 'Vehículo profesional revisado en el taller',
 } = Astro.props;
 ---
 
@@ -75,7 +75,7 @@ const {
         href={`tel:${siteData.phoneForTel}`}
         class="inline-flex items-center gap-2 pt-1 text-sm font-semibold text-text-muted transition-colors hover:text-primary"
       >
-        Call{" "}{siteData.phoneFormatted}
+        Llámanos al {siteData.phoneFormatted}
       </a>
     </div>
 

@@ -8,10 +8,10 @@ import { brand } from '../config/brand';
 import { termsOfService } from '../data/terms';
 ---
 
-<BaseLayout title="Terms of Service" description={`Terms of Service for ${brand.name}. Review the terms that govern use of our website and services.`}>
+<BaseLayout title="Términos y condiciones" description={`Términos y condiciones de ${brand.name}. Consulta las condiciones de uso y servicio.`}>
   <Header slot="header" />
 
-  <Banner title="Terms of Service" />
+  <Banner title="Términos y condiciones" />
 
   <LegalPage effectiveDate={termsOfService.effectiveDate} sections={termsOfService.sections} />
 
