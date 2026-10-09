@@ -24,17 +24,15 @@ import { siteData } from '../../data/siteData';
         </p>
 
         <form
-          name="contact"
+          action="https://formspree.io/f/xgaoyvnb"
           method="POST"
-          data-netlify="true"
-          netlify-honeypot="bot-field"
-          action="/contacto/success"
           class="flex flex-col gap-5"
         >
-          <input type="hidden" name="form-name" value="contact" />
+          <input type="hidden" name="_next" value="https://automovilestrafalgar.es/contacto/success" />
+
           <p class="hidden" aria-hidden="true">
             <label>
-              Deja esto vacío: <input name="bot-field" tabindex="-1" autocomplete="off" />
+              Deja esto vacío: <input name="_gotcha" tabindex="-1" autocomplete="off" />
             </label>
           </p>
 
